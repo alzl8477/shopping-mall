@@ -1,6 +1,10 @@
 {
   "services": {
-    "frontend": { "root": "client/", "framework": "vite" },
+    "frontend": {
+      "root": "client/",
+      "framework": "vite",
+      "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+    },
     "backend": { "root": "server/", "framework": "express" }
   },
   "rewrites": [
